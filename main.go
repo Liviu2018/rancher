@@ -9,6 +9,8 @@ import (
 const webContent = "Hello World!"
 
 func main() {
+	fmt.Println("starting main")
+	
 	http.HandleFunc("/", helloHandler)
 	log.Fatal(http.ListenAndServe(":80", nil))
 }
